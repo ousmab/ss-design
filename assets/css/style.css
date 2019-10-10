@@ -19,12 +19,29 @@ body {
 	margin-left: 10px;
 }
 
-#salers-menu-items{
-	border: 0px solid #fff !important;
+#salers-menu-items >.card{
+	
+	
 }
 
+#salers-others-informations{
+	padding: 0px;
 
+	
+	
+	
+	
 
+}
+
+.fixed-right{
+	position: fixed;
+	right: 13%;
+}
+
+.fixed-left {
+ 
+}
 .container-fluid{
 	margin-left: 3%;
 	margin-right: 3%;
