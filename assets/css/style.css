@@ -1,14 +1,17 @@
 
-body{
-	
+/* Show it is fixed to the top */
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
 }
-
 
 /*salers class and id*/
 
+
+
 .salers-nav-bg{
 	background: #4E73DF !important;
-	color : white;
+	
 }
 
 .salers-menu-link{
