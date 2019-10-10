@@ -1,7 +1,10 @@
 
 body{
-	background: #F5F8FA;
+	
 }
+
+
+/*salers class and id*/
 
 .salers-nav-bg{
 	background: #4E73DF !important;
@@ -11,4 +14,15 @@ body{
 .salers-menu-link{
 	color :white;
 	margin-left: 10px;
+}
+
+#salers-menu-items{
+	border: 0px solid #fff !important;
+}
+
+
+
+.container-fluid{
+	margin-left: 3%;
+	margin-right: 3%;
 }
