@@ -54,7 +54,10 @@
 
 		<!-- SCROLLABLE  -->
 	    <div class="card  col-sm-5 mr-3 " id="salers-sales-queue">
-	      
+	      			
+				
+
+
 	      
 	        	<!-- ARTICLE  -->
 				<div class="card" style="border:0px solid #fff; ">
@@ -70,7 +73,7 @@
 
 						<img src="img/1.jpg"  class="card-img-top" alt="...">
 						<h5 class="card-title" style="font-weight: bold ">Chaussure Homme pointue 45</h5>
-						<p class="card-text">
+						<p class="card-text" style="text-align: justify; ">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nesciunt amet id fuga, incidunt,Quidem nesciunt amet id fuga, incidunt,
 
 							
@@ -100,7 +103,9 @@
 							</p>
 
 							<p class="col-sm">
-								<a type="button" style="border-radius: 10px;border:1px solid #C9DAEA; " class="btn btn-sm">Acheter</a>		</p>
+								<a data-toggle="modal" data-target="#salers-buy-modal" type="button" style="border-radius: 10px;border:1px solid #C9DAEA; " class="btn btn-sm">Acheter</a>		</p>
+							
+									
 
 							<p class="col-sm">
 								<a href="#" class="float-right">
@@ -473,9 +478,79 @@
 </div>
 
 
+<!------------------------------------------------------------------------------------->
+<!-- COMPOSANTS COMMUN A PLUSIEURS PRODUITS -->
+<!------------------------------------------------------------------------------------->
+
+
+<!-- Modal -->
+<div style="" class="modal fade" id="salers-buy-modal" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" >Veuillez remplir ce formulaire pour acheter</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+        	<div class="row">
+        		
+        		<div class="col-sm-4">
+        			<h5 class="" style="font-weight: bold;color:#858796;font-size: 18px;">Vous êtes sur le point d'acheter chaussure homme pointue 45</h5>
+        			<img src="img/1.jpg"  class="card-img-top" alt="...">
+						
+        		</div>
+
+        		<div class="col-sm-8">
+        		<form class="user" method="post" style="padding:20px ">
+                    <input name="_csrf_token" type="hidden" value="pmcx0+?F3A@vazf.d11des">
+
+                    <div class="form-group">
+                      <input type="number" min="1" name='quantity' class="form-control" aria-describedby="roleHelp" placeholder="Quantité à acheter" required>
+                    </div>
+
+                    <div class="form-group">
+                      <select class="form-control" name="town">
+                        <option value="">Dans quelle ville êtes vous?</option>
+                        <option value="douala">Douala</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <input type="text" name='location' class="form-control" aria-describedby="roleHelp" placeholder="Où doit-on vous faire livrer?" required>
+                    </div>
+
+                    <div class="form-group">
+                      <input type="tel" name='phone' class="form-control" aria-describedby="roleHelp" placeholder="Votre numéro de téléphone SVP" required>
+                    </div>
+
+                    <input type="submit" value="Acheter" class="btn btn-primary  btn-block">
+                  </form>
+        		</div>
+        	</div>
+
+        </div>
+      </div>
+      <div class="modal-footer" style="border: 1px solid #fff ">
+       
+       
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------------------------------------------------------------------------->
+<!-- END COMPOSANTS COMMUN A PLUSIEURS PRODUITS -->
+<!------------------------------------------------------------------------------------->
+
+
+
 
 <script src="vendor/js/JQuery/jquery-3.4.1.min.js"></script>
 <script src="vendor/js/sticky/jquery.sticky.js"></script>
+<script src="vendor/js/bootstrap.min.js"></script>
+
 <script src="assets/js/scripts.js"></script>
 
 </body>
