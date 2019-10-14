@@ -8,4 +8,10 @@ $(function(){
         $(this).dropdown()
       })
 
+
+	$('#salers-dropdown-infos-shop').hover(function() {
+        $(this).dropdown()
+      })
+
+
 } )
