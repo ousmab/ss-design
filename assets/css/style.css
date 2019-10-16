@@ -17,6 +17,7 @@ body {
 .salers-menu-link{
 	color :white;
 	margin-left: 10px;
+	font-weight:600;
 }
 
 .salers-menu-link:hover{
@@ -36,9 +37,10 @@ body {
 
 }
 
+
 .salers-search-menu-input{
 	border-radius: 20px;
-	
+
 }
 
 .salers-navbar-actived{
