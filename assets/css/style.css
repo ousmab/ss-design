@@ -36,6 +36,11 @@ body {
 
 }
 
+.salers-search-menu-input{
+	border-radius: 20px;
+	
+}
+
 .salers-navbar-actived{
  border-bottom: 3px solid #fff;
 
