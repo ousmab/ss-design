@@ -22,21 +22,30 @@
   <body>
 
   	<!-- -->
-	 <nav class="navbar navbar-expand-md navbar-default fixed-top salers-nav-bg">
-      <a class="navbar-brand salers-menu-link" href="#">Logo</a>
+	 <nav class="navbar navbar-expand-md navbar-default fixed-top salers-nav-bg" style="padding:0px;  ">
+      <a class="navbar-brand salers-menu-link" href="#">
+      	<img src="logo/salers.jpg" style="width: 120px;height: 40px " alt="">
+      </a>
       
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link salers-menu-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <div class="collapse navbar-collapse" id="navbarCollapse" >
+        <ul class="navbar-nav mr-auto" >
+          <li class="nav-item active salers-navbar-actived" style="">
+            <a class="nav-link salers-menu-link" href="#">Accueil <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link salers-menu-link" href="#">Link</a>
+          <li class="nav-item salers-navbar" >
+            <a class="nav-link salers-menu-link" href="#">Mon Compte</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link salers-menu-link" href="#">Notification</a>
           </li>
        </ul>
-        <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        </form>
+		 <form class="form-inline mr-auto pull-right">
+	      <div class="md-form my-0">
+	        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+	        <i class="fas fa-search text-white ml-3" aria-hidden="true"></i>
+	      </div>
+    	</form>
+
       </div>
     </nav>
 

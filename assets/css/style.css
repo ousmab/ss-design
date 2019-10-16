@@ -19,6 +19,11 @@ body {
 	margin-left: 10px;
 }
 
+.salers-menu-link:hover{
+	color :#E6ECF0;
+	margin-left: 10px;
+}
+
 #salers-menu-items >.card{
 	
 	
@@ -27,11 +32,17 @@ body {
 #salers-others-informations{
 	padding: 0px;
 
-	
-	
-	
-	
 
+
+}
+
+.salers-navbar-actived{
+ border-bottom: 3px solid #fff;
+
+}
+
+.salers-navbar{
+	height: 50px 
 }
 
 .fixed-right{
