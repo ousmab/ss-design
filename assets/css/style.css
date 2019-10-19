@@ -53,8 +53,8 @@ body {
 }
 
 .fixed-right{
-	position: fixed;
-	right: 10%;
+	position: fixed !important;
+	right: 8%;
 }
 
 .fixed-left {
@@ -63,4 +63,8 @@ body {
 .container-fluid{
 	margin-left: 3%;
 	margin-right: 3%;
+}
+
+.bg-register-image{
+	background-image: url('img/bg/salers.png') !important;
 }
