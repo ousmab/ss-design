@@ -65,6 +65,9 @@ body {
 	margin-right: 3%;
 }
 
-.bg-register-image{
+.salers-bg-register-image{
 	background-image: url('img/bg/salers.png') !important;
+	background-position:center;
+	background-size:cover;
+	display:block!important;
 }
