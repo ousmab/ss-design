@@ -14,6 +14,9 @@
 	<link href="vendor/css/bootstrap.min.css" rel="stylesheet" >
 	<link href="vendor/fontawesome/css/all.css" rel="stylesheet" >
 
+	<link href="vendor/dropdown/jkt_dropdown/css/jktCuteDropdown.min.css" rel="stylesheet" >
+	<link href="vendor/dropdown/jkt_dropdown/css/style_by_you_need.css" rel="stylesheet" >
+
 	<link href="assets/css/style.css" rel="stylesheet" >
 
 
@@ -91,17 +94,18 @@
 							 	<span>
 							 		
 							 		
-									<div class="btn-group dropup">
-									<a id="salers-dropdown-infos-shop"  data-toggle="dropdown"  href="#" class="">
-										Proxima Shop
-									</a>
-							        <div class="dropdown-menu"  style=" ">
-							          <a class="dropdown-item" href="#">Options 1</a>
-							          <span class="dropdown-divider "></span>
-							          <a class="dropdown-item" href="#">Options 3</a>
-							          <a class="dropdown-item" href="#">Options 3</a>
-							        </div>
-							      </div>
+								<li class="jktCD" id="salers-shop-options"> 
+								  <span class="jktCD-click">Proxima Shop</span>
+								  <div class="jktCD-main jktCD-style-one">
+								    <ul>
+								      <li class="item"><a href="#">Home</a></li>
+								      <li class="item"><a href="#">Settings</a></li>
+								      
+								      <li class="pemisah"></li>
+								      <li class="item"><a href="">Autres...</a></li>
+								    </ul>
+								  </div>
+								</li>
 
 							 	</span>
 						</span>
@@ -145,17 +149,20 @@
 							<p class="col-sm">
 								
 
-								<div class="btn-group dropup dropleft">
-									<a id="dropdown-btn"  data-toggle="dropdown"  href="#" class="">
-										<span style="font-size:25px;color:#C9DAEA" class="fa fa-chevron-up" ></span>
-									</a>
-							        <div class="dropdown-menu"  style=" ">
-							          <a class="dropdown-item" href="#">Options 1</a>
-							          <span class="dropdown-divider "></span>
-							          <a class="dropdown-item" href="#">Options 3</a>
-							          <a class="dropdown-item" href="#">Options 3</a>
-							        </div>
-							      </div>
+								<li class="demo jktCD" id="salers-product-options"> 
+								  <span class="jktCD-click"> <i class="fa fa-chevron-up"></i> </span>
+								  <div class="jktCD-main jktCD-salers-product" >
+								    <ul>
+								      <li class="item"><a href="#">Home</a></li>
+								      <li class="item"><a href="#">Settings</a></li>
+								    
+								      <li class="pemisah"></li>
+								      <li class="item"><a href="">Sign Out</a></li>
+								    </ul>
+								  </div>
+								</li>
+
+							     
 													
 							</p>
 						</div>
@@ -644,7 +651,11 @@
 
 <script src="vendor/js/JQuery/jquery-3.4.1.min.js"></script>
 <script src="vendor/js/sticky/jquery.sticky.js"></script>
-<script src="vendor/dropdown/popper.min.js"></script>
+
+ <!----<script src="vendor/dropdown/popper.min.js"></script>--->
+
+<script src="vendor/dropdown/jkt_dropdown/js/jktCuteDropdown.min.js"></script>
+
 <script src="vendor/js/bootstrap.min.js"></script>
 
 <script src="assets/js/scripts.js"></script>

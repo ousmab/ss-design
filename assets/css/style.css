@@ -11,7 +11,7 @@ body {
 
 .salers-nav-bg{
 	background: #4E73DF !important;
-	
+	z-index: 2000;
 }
 
 .salers-menu-link{
@@ -70,4 +70,9 @@ body {
 	background-position:center;
 	background-size:cover;
 	display:block!important;
+}
+
+
+.jktCD-main > li:hover > a{
+	color:#4E73DF;
 }
