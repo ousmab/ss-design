@@ -13,6 +13,13 @@ $(function(){
 
   */
 
-  	$('#salers-product-options').jktCD();
+  	$('#salers-product-options').jktCD(
+  		{
+  			typeCursor :"click",
+  			triActive  : false
+  		}
+
+  		);
+
   	$('#salers-shop-options').jktCD();
 } )
