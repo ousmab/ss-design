@@ -1,7 +1,7 @@
 $(function(){
 
-	/*fixer le menu de gauche*/ 
-	$("#salers-menu-items > .card").sticky({topSpacing:"4.5rem"});
+	/*fixer le menu de gauche
+	$("#salers-menu-items > .card").sticky({topSpacing:"4.5rem"});*/ 
 
 	/*$("#salers-others-informations").sticky({topSpacing:"4.5rem"});*/
 
@@ -21,5 +21,7 @@ $(function(){
 
   		);
 
-  	$('#salers-shop-options').jktCD();
+	  $('#salers-shop-options').jktCD();
+	  
+	  $('.salers-collapse-menu').collapse()
 } )

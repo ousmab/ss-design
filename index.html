@@ -25,23 +25,35 @@
   <body>
 
   	<!-- -->
-	 <nav class="navbar navbar-expand-md navbar-default fixed-top salers-nav-bg" style="padding:0px;  ">
-      <a class="navbar-brand salers-menu-link" href="#">
-      	<img src="logo/salers.jpg" style="width: 120px;height: 40px " alt="">
-      </a>
-      
-      <div class="collapse navbar-collapse" id="navbarCollapse" >
-        <ul class="navbar-nav mr-auto" >
-          <li class="nav-item active salers-navbar-actived" style="">
-            <a class="nav-link salers-menu-link" href="#"><i class="fa fa-home salers-navbar-icon"></i> Accueil <span class="sr-only">(current)</span></a>
+	 <nav class="navbar navbar-expand-sm navbar-default fixed-top salers-nav-bg" style="padding:0px;  ">
+     
+	  
+	  <!--  -->
+		<a class="navbar-brand salers-menu-link" href="#">
+			<img class="d-none d-sm-block" src="logo/salers.jpg" style="width: 120px;height: 40px " alt="">
+		</a>
+		
+
+
+      <div class="salers-collapse-menu collapse navbar-collapse" id="navbarCollapse" >
+
+		<!--  sur grand ecran  -->
+        <ul class="navbar-nav mr-auto  " >
+          <li class="nav-item active salers-navbar-actived" >
+            <a class="nav-link salers-menu-link" href="#"><i class="fa fa-home salers-navbar-icon"></i> <span class="xs-hidden-text-menu">Accueil</span> </a>
           </li>
           <li class="nav-item salers-navbar" >
-            <a class="nav-link salers-menu-link" href="#"><i class="fa fa-user salers-navbar-icon"></i> Mon Compte</a>
+            <a class="nav-link salers-menu-link" href="#"><i class="fa fa-user salers-navbar-icon"></i> <span class="xs-hidden-text-menu">Mon Compte</span></a>
           </li>
           <li class="nav-item" >
-            <a class="nav-link salers-menu-link" href="#"><i class="fa fa-bell"></i> Notification</a>
+            <a class="nav-link salers-menu-link" href="#"><i class="fa fa-bell salers-navbar-icon"></i> <span class="xs-hidden-text-menu">Notification</span></a>
           </li>
-       </ul>
+	   </ul>
+	   
+	   <!--  sur petit ecran mobile et tablette  -->
+
+	  
+
 		 <form class="form-inline mr-auto pull-right">
 	      <div class="md-form my-0">
 	        <input class="form-control salers-search-menu-input" type="text" placeholder="Search" aria-label="Search">
@@ -50,13 +62,16 @@
     	</form>
 
       </div>
-    </nav>
+	</nav>
+	
+
+	
 
    <div class="container-fluid">
  	<div class="row">
 
  		<!-- FIX MENU -->
-	   	 <div class="col-sm-3 " style="width: 18rem; " id="salers-menu-items">
+	   	 <div class="col-sm-3 " style="width: 18rem;" id="salers-menu-items">
 		  <div class="card" style="border: 0px solid #fff !important;">
 		     <div class="card-body">
 		     	<ul class="list-group list-group-flush">
@@ -508,7 +523,7 @@
 
 		<!-- FIX   -->
 		
-	<div class="col-sm-3 fixed-right" style="width: 18rem;" id="salers-others-informations">
+	<div class="col-sm-3 " style="width: 18rem;" id="salers-others-informations">
 		<div class="card" style="width: 18rem;overflow-y: scroll;border: 0px solid #fff " >
 			 <div class="card-header" style="background-color: #F8F9FC ;border:0px solid #fff">
 			   Trouvez ce qui vous intéresse !
@@ -559,7 +574,7 @@
 
 		</div>
 
-		<div style="margin-top: 25px ">
+		<div style="margin-top: 5px ">
 			
 					<a href="#" style="font-size:12px; margin-right:12px ">Conditions</a>
 				
@@ -583,7 +598,7 @@
 
 
 <!-- Modal -->
-<div style="" class="modal fade" id="salers-buy-modal" tabindex="-5" role="dialog" >
+<div  class="modal fade" id="salers-buy-modal" tabindex="-5" role="dialog" >
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -654,11 +669,9 @@
 
 
 <script src="vendor/dropdown/jkt_dropdown/js/jktCuteDropdown.min.js"></script>
-<script src="vendor/js/sticky/jquery.sticky.js"></script>
+
 
  <!----<script src="vendor/dropdown/popper.min.js"></script>--->
-
-
 
 <script src="vendor/js/bootstrap.min.js"></script>
 
