@@ -78,23 +78,60 @@ body {
 
 
 /*
-	CHANGES JUSTE LES DIMENSIONS HEIGHT ET WIDTH de la class .salers_img_product
+	RETOUCHE DES MEDIA QUERIES
 
-	definit en fonction de l'apercu de chaque device
+	les styles d'ici s'appliqueront en fonction de l'apercu de chaque device
 */
 
 /*
  // Extra small devices (portrait phones, less than 576px)
 */
 @media (max-width: 575.98px) {
-	.xs-hidden-text-menu{
+	.salers-xs-hidden{
 		display: none !important;
 	}
 
 	.salers-navbar-icon{
 		font-size: 25px;
 	}
+	/*ICI SI LE NOMBRE DE NAV-ITEM AUGMENTE FAUT MODIFIER*/
+	.navbar-nav > .nav-item{
+		display: inline-block;
+		width: 33.33%;
+		
+		text-align: center;
+		display: inline !important;
+	}
 	
+	.navbar-nav{
+		flex-direction: row !important;
+		margin-bottom: 10px;
+	}
+	.wrapper-salers-search-menu-input{
+		width: 100%;
+		margin:auto;
+	}
+	.salers-seach-form{
+		width: 98%;
+		margin-left:1%;
+	}
+
+	#salers-menu-items, #salers-others-informations{
+		display: none;
+	}
+
+	.container{
+		margin-top:50px !important;
+	}
+
+	#salers-sales-queue{
+		border:0px solid white;
+	}
+
+	.salers-navbar-actived{
+		border-bottom:none;
+		
+	}
  }
 
 
@@ -103,12 +140,21 @@ body {
 */
 @media (min-width: 576px) and (max-width: 767.98px) {
 
-	.xs-hidden-text-menu{
+	.salers-xs-hidden{
 		display: none !important;
 	}
 	.salers-navbar-icon{
 		font-size: 25px;
 	}
+	
+	.navbar-nav > .nav-item{
+		width: 25%;
+		
+		
+	}
+
+
+	
 
  }
 
@@ -116,12 +162,17 @@ body {
 // Medium devices (tablets, 768px and up)
 */
 @media (min-width: 768px) and (max-width: 991.98px) { 
-	.xs-hidden-text-menu{
+	.salers-xs-hidden{
 		display: none !important;
 	}
 	
 	.salers-navbar-icon{
 		font-size: 25px;
+	}
+
+	.navbar-nav > .nav-item{
+		width: 25%;
+		
 	}
 
 }
@@ -133,8 +184,7 @@ body {
 */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
 
-	
-}
+	}
 
 /*
 // Extra large devices (large desktops, 1200px and up)
