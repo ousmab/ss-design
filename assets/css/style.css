@@ -153,8 +153,22 @@ body {
 		
 	}
 
-
+	 #salers-others-informations{
+		display: none;
+	}
 	
+		/*c'est comme si on avait col-sm-7*/
+	 #salers-sales-queue{
+		-ms-flex: 0 0 58.333333%;
+		flex: 0 0 58.333333%;
+		max-width: 58.333333%;
+	 }
+
+	 #salers-menu-items{
+		-ms-flex: 0 0 33.333333%;
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	 }
 
  }
 
@@ -174,6 +188,8 @@ body {
 		width: 25%;
 		
 	}
+
+
 
 }
 
