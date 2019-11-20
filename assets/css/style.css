@@ -94,7 +94,7 @@ body {
 	.salers-navbar-icon{
 		font-size: 25px;
 	}
-	/*ICI SI LE NOMBRE DE NAV-ITEM AUGMENTE FAUT MODIFIER*/
+	/*ICI SI LE NOMBRE DE NAV-ITEM AUGMENTE FAUT MODIFIER WIDTH*/
 	.navbar-nav > .nav-item{
 		display: inline-block;
 		width: 33.33%;
@@ -116,7 +116,7 @@ body {
 		margin-left:1%;
 	}
 
-	#salers-menu-items, #salers-others-informations{
+	#salers-menu-items,#salers-text-intro-area, #salers-others-informations{
 		display: none;
 	}
 
@@ -153,7 +153,7 @@ body {
 		
 	}
 
-	 #salers-others-informations{
+	 #salers-others-informations,#salers-text-intro-area{
 		display: none;
 	}
 	
@@ -168,6 +168,10 @@ body {
 		-ms-flex: 0 0 33.333333%;
 		flex: 0 0 33.333333%;
 		max-width: 33.333333%;
+	 }
+
+	 .salers-textlink-size-sm{
+		font-size: 10px;
 	 }
 
  }
