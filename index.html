@@ -18,13 +18,30 @@
 	<link href="vendor/dropdown/jkt_dropdown/css/custom_jktCD.css" rel="stylesheet" >
 
 	<link href="assets/css/style.css" rel="stylesheet" >
-
+	<link rel="stylesheet" href="vendor/sidebar/css/sidebar.css">
 
   
   </head>
   <body>
 
-  	<!-- -->
+
+	<!-- SIDE BAR MENU AFFICHER POUR LES MOBILES ET TABLETTES -->
+	<!---------------------------------------------------------->
+	<div id="salers-sidebar" class="sidenav ">
+		<div>
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<br><br>
+				<a class="link" href="#" style="font-weight:450;"><i class="fa fa-hand-holding-heart"></i> Mes Envies <span class="badge badge-light salers-sidebar-badge">(14)</span></a>
+				<a class="link" href="#" style="font-weight:450;"><i class="fa fa-hand-history"></i> Mes Achats <span class="badge badge-light salers-sidebar-badge">(14)</span></a>
+				
+				<a class="link" href="#" style="font-weight:450;"><i class="fas fa-cog"></i> Paramétres</a>	
+
+		</div>
+	</div>
+
+	<!--END SIDE BAR MOBILE AND TABLET -->
+	<!---------------------------------------------------------->
+  	<!-- MENU NAVIGATION HAUT -->
 	 <nav class="navbar navbar-expand-sm navbar-default fixed-top salers-nav-bg" style="padding:0px;  ">
      
 	  
@@ -39,6 +56,13 @@
 
 		<!--  sur grand ecran  -->
         <ul  class="navbar-nav mr-auto  " >
+
+		  <!-- DECLENCHEUR DU SIDEBAR MENU -->	
+		  <li class="nav-item  salers-hide-lg "  >
+            <a  onclick="openNav()" class="nav-link salers-menu-link" href="#"><i class="fa fa-align-justify salers-navbar-icon"></i> <span class="salers-xs-hidden"></span> </a>
+		  </li>
+			<!-- ---------------------- -->
+			
           <li class="nav-item salers-navbar-actived  " >
             <a class="nav-link salers-menu-link" href="#"><i class="fa fa-home salers-navbar-icon"></i> <span class="salers-xs-hidden">Accueil</span> </a>
           </li>
@@ -79,7 +103,8 @@
 				  <li class="list-group-item "> 
 				  	<a href="#" style="font-weight:450;"><i class="fa fa-hand-holding-heart"></i> Mes Envies <span class="badge badge-light">(14)</span></a>
 				  </li>
-
+					  
+				  
 				  <li class="list-group-item "> 
 				  	<a href="#" style="font-weight:450;"><i class="fa fa-history"></i> Mes Achats</a>
 				  	<span class="badge badge-light">(0)</span></a>
@@ -677,6 +702,7 @@
 <script src="vendor/js/bootstrap.min.js"></script>
 
 <script src="assets/js/scripts.js"></script>
+<script src="vendor/sidebar/js/sidebar.js"></script>
 
 </body>
 </html>
