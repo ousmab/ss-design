@@ -133,8 +133,12 @@ body {
 		
 	}
 
-	.badge-light{
+	.salers-sidebar-badge{
 		font-size: 10px;
+	}
+
+	.salers-btn-sale{
+		width: 80%;
 	}
  }
 
