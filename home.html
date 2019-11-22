@@ -55,8 +55,8 @@
 			</li>
 			<li class="nav-item"></li>
 			
-			<li class="nav-item " >
-			  <a class="nav-link salers-menu-link" href="#"><i class="fa fa-user salers-navbar-icon"></i> <span class="salers-textlink-size-sm">Connecter</span></a>
+			<li class="nav-item" >
+			  <a data-toggle="modal" data-target="#salers-connect-modal" class="nav-link salers-menu-link" href="#"><i class="fa fa-user salers-navbar-icon"></i> <span class="salers-textlink-size-sm">Connecter</span></a>
 			</li>
 		 </ul>
 
@@ -531,62 +531,81 @@
 
 
 <!-- Modal -->
-<div  class="modal fade" id="salers-buy-modal" tabindex="-5" role="dialog" >
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" >Veuillez remplir ce formulaire pour acheter</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="container-fluid">
-        	<div class="row">
-        		
-        		<div class="col-sm-5">
-        			<h5 class="" style="font-weight: bold;color:#858796;font-size: 18px;">Vous êtes sur le point d'acheter chaussure homme pointue 45</h5>
-        			<img src="img/1.jpg"  class="card-img-top" alt="...">
-						
-        		</div>
-
-        		<div class="col-sm-7">
-        		<form class="user" method="post" style="padding:20px ">
-                    <input name="_csrf_token" type="hidden" value="pmcx0+?F3A@vazf.d11des">
-
-                    <div class="form-group">
-                      <input type="number" min="1" name='quantity' class="form-control" aria-describedby="roleHelp" placeholder="Quantité à acheter" required>
-                    </div>
-
-                    <div class="form-group">
-                      <select class="form-control" name="town">
-                        <option value="">Dans quelle ville êtes vous?</option>
-                        <option value="douala">Douala</option>
-                      </select>
-                    </div>
-
-                    <div class="form-group">
-                      <input type="text" name='location' class="form-control" aria-describedby="roleHelp" placeholder="Où doit-on vous faire livrer?" required>
-                    </div>
-
-                    <div class="form-group">
-                      <input type="tel" name='phone' class="form-control" aria-describedby="roleHelp" placeholder="Votre numéro de téléphone SVP" required>
-                    </div>
-
-                    <input type="submit" value="Acheter" class="btn btn-primary float-right">
-                  </form>
-        		</div>
-        	</div>
-
-        </div>
-      </div>
-      <div class="modal-footer" style="border: 1px solid #fff ">
-       
-       
-      </div>
-    </div>
+<div class="modal fade" id="salers-connect-modal" tabindex="-1" role="dialog" >
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+	   
+		<div class="modal-body">
+		  <div class="container-fluid">
+			  <div class="row">
+				<div class="col-lg-6">
+				  <div class="p-5">
+					<h4 class="m-0 font-weight-bold text-primary">Faites vous plaisir!</h4>
+					<p>Salers est un e-commerce social. Découvrez tous ce qui vous passionne et obtenez les,
+					  <b>comme si vous étiez sur whatsapp</b>! Sur salers, l'argent et les produits viennent vers vous tous seuls!
+					</p>
+					<h4 class="m-0 font-weight-bold text-primary">Vendez gratuitement</h4>
+					<p>Cosmétique, Shopping, Accessoires, etc... Exposez vos produits et vendez-les gratuitement!
+					</p>
+					<h4 class="m-0 font-weight-bold text-primary">Achetez à moindre coût</h4>
+					<p>Et faites-vous livrez gratuitement!
+					</p>
+				  </div>
+				</div>
+  
+				<div class="col-lg-6">
+				  <div class="p-5">
+					<div class="text-center">
+					  <h1 class="h4 text-gray-900 mb-4">
+						<b>
+						  
+							
+							<h1 class="h4 text-gray-900 mb-4">Veuillez vous connectez!</h1>
+							
+						  
+						</b>
+					  </h1>
+					</div>
+					<form class="user" method="post" action="index.html">
+					 
+					  <div class="form-group">
+						<input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Adresse email..." required="">
+					  </div>
+  
+					  <div class="form-group">
+						<input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Mot de passe" required="">
+					  </div>
+  
+					  <div class="form-group">
+						<div class="custom-control custom-checkbox small">
+						  <input type="checkbox" class="custom-control-input" id="customCheck">
+						  <label class="custom-control-label" for="customCheck">Se souvenir de moi</label>
+  
+						</div>
+  
+					  </div>
+					  <input type="submit" value="Se connecter" class="btn btn-primary btn-user btn-block">
+					</form>
+					<hr>
+					<div class="text-center">
+					  <a class="small" href="/forgot-password">Mot de passe oublié?</a>
+					</div>
+					<div class="text-center">
+					  <a class="small" href="/register">Créez votre compte!</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+  
+		  </div>
+		</div>
+		<div class="modal-footer" style="border: 1px solid #fff ">
+		 
+		 
+		</div>
+	  </div>
+	</div>
   </div>
-</div>
 <!------------------------------------------------------------------------------------->
 <!-- END COMPOSANTS COMMUN A PLUSIEURS PRODUITS -->
 <!------------------------------------------------------------------------------------->
@@ -601,14 +620,16 @@
 </script>
 
 
-<script src="vendor/dropdown/jkt_dropdown/js/jktCuteDropdown.min.js"></script>
+
 
 
  <!----<script src="vendor/dropdown/popper.min.js"></script>--->
-
+<script src="vendor/dropdown/popper.min.js"></script>
 <script src="vendor/js/bootstrap.min.js"></script>
 
 <script src="assets/js/scripts.js"></script>
-
+<script>
+	$("#salers-connect-modal").modal('show')
+</script>
 </body>
 </html>
