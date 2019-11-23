@@ -1,5 +1,5 @@
 function openNav() {
-  document.getElementById("salers-sidebar").style.width = "250px";
+  document.getElementById("salers-sidebar").style.width = "300px";
 }
 
 function closeNav() {
