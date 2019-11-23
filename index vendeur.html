@@ -31,7 +31,7 @@
 		<div>
 				<a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				<br>
-				<button style=""  class="salers-btn-sale btn  btn-lg">Vendre</button>
+				<button style="" data-toggle="modal" data-target="#salers-sale-modal"  class="salers-btn-sale btn  btn-lg">Vendre</button>
 					<br><br>
 				<a class="link" href="#" style="font-weight:450;"><i class="fa fa-hand-holding-heart"></i> Mes Envies <span class="badge badge-light salers-sidebar-badge">(14)</span></a>
 				<a class="link" href="#" style="font-weight:450;"><i class="fa fa-history"></i> Mes Achats <span class="badge badge-light salers-sidebar-badge">(06)</span></a>
@@ -61,7 +61,7 @@
 		
 
 
-      <div class="salers-collapse-menu collapse navbar-collapse" id="navbarCollapse" >
+      <div class="salers-collapse-menu collapse collapse show navbar-collapse" id="navbarCollapse" >
 
 		<!--  sur grand ecran  -->
         <ul  class="navbar-nav mr-auto  " >
@@ -111,7 +111,7 @@
 					
 		     	<ul class="list-group list-group-flush">
 				  <li class="list-group-item "> 
-						<button style="line-height:5px ;font-size: 18px; width: 100%; height: 35px;border-radius: 20px; background-color: #4E73DF;color:white"  class=" btn  btn-lg">Vendre</button>
+						<button data-toggle="modal" data-target="#salers-sale-modal" style="line-height:5px ;font-size: 18px; width: 100%; height: 35px;border-radius: 20px; background-color: #4E73DF;color:white"  class=" btn  btn-lg">Vendre</button>
 					<br><br>
 				</li>
 				<li class="list-group-item "> 
@@ -659,11 +659,11 @@
 
 
 <!-- Modal -->
-<div  class="modal fade" id="salers-buy-modal" tabindex="-5" role="dialog" >
-  <div class="modal-dialog modal-lg" role="document">
+<div  class="modal fade" id="salers-sale-modal" tabindex="-5" role="dialog" >
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" >Veuillez remplir ce formulaire pour acheter</h5>
+        <h5 class="modal-title" >Veuillez remplir ce formulaire pour vendre</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -700,7 +700,7 @@
                     <div class="form-group">
                       <input type="tel" name='phone' class="form-control" aria-describedby="roleHelp" placeholder="Votre numéro de téléphone SVP" required>
                     </div>
-
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <input type="submit" value="Acheter" class="btn btn-primary float-right">
                   </form>
         		</div>
@@ -729,7 +729,7 @@
 </script>
 
 
-<script src="vendor/dropdown/jkt_dropdown/js/jktCuteDropdown.min.js"></script>
+ <!---CE SCRIPT CREE UN CONFLIT  <script src="vendor/dropdown/jkt_dropdown/js/jktCuteDropdown.min.js"></script>-->
 
 
  <!----<script src="vendor/dropdown/popper.min.js"></script>--->
