@@ -75,7 +75,9 @@ body {
 	color:#4E73DF;
 }
 
-
+.salers-product-btn-options{
+	flex-wrap: nowrap ;
+}
 
 /*
 	RETOUCHE DES MEDIA QUERIES
@@ -140,6 +142,9 @@ body {
 	.salers-btn-sale{
 		width: 80%;
 	}
+
+
+	
  }
 
 
@@ -179,6 +184,8 @@ body {
 	 .salers-textlink-size-sm{
 		font-size: 10px;
 	 }
+
+	 
 
  }
 
